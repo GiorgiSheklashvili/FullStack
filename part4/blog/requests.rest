@@ -1,0 +1,45 @@
+###
+
+post http://localhost:3003/api/users
+Content-type: application/json
+
+{
+    "username": "fffss",
+    "name": "john doe",
+    "password": "123456"
+}
+
+###
+post http://localhost:3003/api/blogs
+Content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzZGFzZCIsImlkIjoiNjFmN2I3MTlhNWE0YjkxNjMwZjIzNTllIiwiaWF0IjoxNjQzNjI3NzkyLCJleHAiOjE2NDM2MzEzOTJ9.f-f0uriFmIWkCeTSGrIB2mg449kkNXS4JPJsOx2Dsj4
+
+{
+    "title": "new1",
+    "author": "trial123",
+    "url": "http://google.com",
+    "likes": 3
+}
+
+
+###
+delete http://localhost:3003/api/blogs/61f7c5231f1f9e11f0c42eef
+Content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFzZGFzZCIsImlkIjoiNjFmN2I3MTlhNWE0YjkxNjMwZjIzNTllIiwiaWF0IjoxNjQzNjI3NzkyLCJleHAiOjE2NDM2MzEzOTJ9.f-f0uriFmIWkCeTSGrIB2mg449kkNXS4JPJsOx2Dsj4
+
+###
+post http://localhost:3003/api/login
+Content-type: application/json
+
+{
+    "username": "asdasd",
+    "password": "12313"
+}
+
+###
+get http://localhost:3003/api/blogs
+Content-type: application/json
+
+###
+get http://localhost:3003/api/users
+Content-type: application/json
